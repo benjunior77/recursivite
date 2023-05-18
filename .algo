@@ -1,0 +1,19 @@
+FUNCTION estpalindrome(mot) : return_type
+ VAR
+    CHAR mot inverse
+ BEGIN
+    pour i allant de taille(mot)-1 A 0 par pas de -1 faire 
+    mot inverse <- motinverse+mot(1)
+    RETURN vrai ;
+
+  pour i allant de taille(mot)-1 A 0 par pas de -1 faire 
+  si mot (i) est # motinverse(i) alors
+  RETURN faux
+    
+ END
+ IF (mot=0) THEN
+    estpalindrome
+    IF (mot=i) THEN
+      estpalindrome
+    END_IF
+ END_IF
